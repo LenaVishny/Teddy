@@ -1,0 +1,250 @@
+#myVideo{
+    width: 100%;
+}
+body{
+    margin: 0;
+    background-color: #FFD5CD;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    background-color: #F9813A;
+}
+.tit{
+    font-family: 'Marck Script', cursive;
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu{
+    font-family: 'Ubuntu', sans-serif;
+    color: #4F0E0E;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+.about{
+    display: flex;
+}
+.abo{
+    align-self: auto;
+    font-family: 'Marck Script', cursive;
+    font-size: 30px;
+    padding: 30px;
+    color: #4F0E0E;
+    transform-style: preserve-3d;
+    animation: main-rotate 10s infinite linear;
+}
+.delivery{
+    display: flex;
+    flex-direction: column;
+    background-color: #F9813A;
+}
+.del{
+    align-self: center;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Marck Script', cursive;
+}
+.cont{
+    color:#4F0E0E;
+    font-size: 30px;
+    text-decoration: none;
+    margin-left: 5%;
+}
+.cont:hover{
+    background-color:#FFF1F1;
+    color: purple;
+    padding: 15px;
+}
+
+
+
+.work {
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+}
+.seaair {
+    display: flex;
+    justify-content: center;
+}
+.txt {
+    font-size: 20px;
+    color: #4F0E0E;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+}
+
+.coup {
+    width: 100%;
+    height: 500px;
+    position: relative;    
+}
+.description {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    color: palevioletred;
+    -webkit-text-stroke: .04em black;
+    text-align:start;
+    font-size: 30px;
+    font-family:  'Ubuntu', sans-serif;
+}
+.flip-card {
+    background-color: #FFF1F1;
+    width: 30%;
+    height: 500px;
+    border: 1px solid pink;
+    perspective: 1000px;  
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+.flip-card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFF1F1;
+    transform: rotateY(180deg);
+}
+
+@media all and (max-width:850px){
+    .title{
+        display: flex;
+    }
+    .tit{
+        align-self: center;
+        font-size: 15px;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        align-self: center;
+        
+    }
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .abo{
+        align-self: center;
+        font-size: 25px;
+        width: 500px;
+    }
+    .delivery{
+        display: flex;
+    }
+    .del{
+        align-self: center;
+    }
+    .contacts{
+        display: flex;
+    }
+    .cont{
+        align-self: center;
+    }
+    .flip-card {
+        height: 400px;
+        width: 300px;
+        perspective: 1000px;  
+    }
+    .work {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .txt {
+        font-size: 15px;
+    }
+    .description {
+        font-size: 20px;
+    }
+    .coup {
+        height: 100%;
+    }
+} 
+
+
+
+@media all and (max-width:500px){
+    .title{
+        display: flex;
+    }
+    .tit{
+        align-self: center;
+        font-size: 10px;
+    }
+    .nav{
+        display: flex;
+    }
+    .menu{
+        align-self: center;
+        font-size: 15px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .abo{
+        align-self: center;
+        font-size: 15px;
+        width: 300px;
+    }
+    .delivery{
+        display: flex;
+    }
+    .del{
+        align-self: center;
+    }
+    .contacts{
+        display: flex;
+    }
+    .cont{
+        align-self: center;
+        font-size: 20px;
+    }
+    .wot{
+        width: 70%;
+    }
+    .flip-card {
+        height: 300px;
+        width: 250px;
+        perspective: 1000px;  
+    }
+    .work {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .txt {
+        font-size: 10px;
+    }
+    .description {
+        font-size: 15px;
+    }
+    .coup {
+        height: 100%;
+    }
+}

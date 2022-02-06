@@ -1,0 +1,68 @@
+body{
+    background-color: #FCF1F1;
+}
+.Hi{
+    display: flex;
+    justify-content: center;
+    background-color: #F9813A;
+}
+.Hey{
+    font-family: 'Marck Script', cursive;
+}
+.foto{
+    display: flex;
+}
+.fo{
+    align-self: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    color: #FC5404;
+}
+.abc{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media all and (max-width:800px){
+    .Hi{
+        display: flex;
+    }
+    .Hey{
+        align-self: center;
+    }
+    .foto{
+        display: flex;
+        flex-direction: column;
+    }
+    .abc{
+        display: flex;
+        flex-direction: column;
+    }
+    .fo{
+        align-self: center;
+        
+    }
+}
+@media all and (max-width:500px){
+    .Hi{
+        display: flex;
+    }
+    .Hey{
+        align-self: center;
+        font-size: 20px;
+    }
+    .foto{
+        display: flex;
+        flex-direction: column;
+    }
+    .abc{
+        display: flex;
+        flex-direction: column;
+    }
+    .fo{
+        align-self: center;
+        width: 300px;
+        font-size: 15px;
+    }
+}
